@@ -13,6 +13,7 @@ import { useGameStatus } from "../hooks/useGameStatus";
 import Stage from "./Stage";
 import Display from "./Display";
 import StartButton from "./StartButton";
+import { StyledAnchor } from "./styles/StyledAnchor";
 
 const Tetris = () => {
   const [dropTime, setDropTime] = useState(null);
@@ -119,6 +120,9 @@ const Tetris = () => {
             </div>
           )}
           <StartButton callback={startGame} />
+          <StyledAnchor href="https://matias-ruiz.vercel.app/" target="_blank">
+            Copyright by JMR
+          </StyledAnchor>
         </aside>
       </StyledTetris>
     </StyledTetrisWrapper>
